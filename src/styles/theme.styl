@@ -5,39 +5,41 @@ extra-color-b = rgb(164,61,54)
 extra-color-a = rgb(87,191,238)
 extra-color-c = rgb(65,147,212)
 
-// @font-face {
-//     font-family: 'Lurk B';
-//     src: url('ABosaNova.woff2') format('woff2'),
-//         url('ABosaNova.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: 'a_BosaNova';
+    src: url('ABosaNova.woff2') format('woff2'),
+        url('ABosaNova.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 li, td
-	font-family 'PT Mono', sans-serif
+	font-family 'Lurk B', 'PT Mono', sans-serif
 	color main-color
 
 td
 	font-size 20px
 
 th
-	font-family 'Lurk B', sans-serif
+	font-family 'Lurk A', 'a_BosaNova', sans-serif
 	color main-color
 	padding-bottom 20px !important
 
 blockquote
-	font-family 'PT Mono', sans-serif
+	font-size 30px	
+	line-height 1.3
+	padding 20px 0
+	font-family 'Lurk B', 'PT Mono', sans-serif
 	color main-color
-	font-weight 100
-	letter-spacing -1px
 	&:before
 		font-family 'PT Sans'
+		font-size 3em !important
 	
 .nosign
 	li
-		font-family 'PT Mono', sans-serif
+		font-family 'Lurk B', 'PT Mono', sans-serif
 		&:before
 			visibility hidden
 		
@@ -46,7 +48,7 @@ blockquote
 	height 75px
 	min-width 55px
 	color extra-color
-	font-family 'Lurk B', sans-serif
+	font-family 'Lurk A', 'a_BosaNova', sans-serif
 	font-size 40px
 	padding-top 0
 	margin-left 30px
@@ -65,9 +67,8 @@ blockquote
 		padding-left 550px
 	h2
 		color #000
-		font-family 'Lurk B', sans-serif
+		font-family 'Lurk A', 'a_BosaNova', sans-serif
 		font-weight 100
-		letter-spacing: -3px
 	a
 		color main-color
 		
@@ -141,8 +142,8 @@ blockquote
 			display inline-block
 			background-color extra-color-b
 			color white
-			padding 10px 15px 15px
-			font-family 'Lurk B', sans-serif
+			padding 10px 15px 5px
+			font-family 'Lurk A', 'a_BosaNova', sans-serif
 			font-size 44px
 			letter-spacing 1px
 			&.shout
@@ -152,7 +153,6 @@ blockquote
 				border none
 				background none
 				color main-color
-				letter-spacing 1px
 		&.bg
 			h2
 				background none
@@ -188,10 +188,6 @@ blockquote
 	
 	&.bgblack
 		background black
-
-blockquote
-	font-size 35px	
-	line-height 1.4
 	
 figcaption
 	opacity 0.5
